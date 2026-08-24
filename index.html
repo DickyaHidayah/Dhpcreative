@@ -11,18 +11,18 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{
   /* Brand colors — sama di kedua mode */
-  --gold:#C9A84C;--gold2:#E8C97A;--gold3:#A07830;--gold-dim:rgba(201,168,76,.12);
+  --gold:#D2704A;--gold2:#E8946F;--gold3:#B85630;--gold-dim:rgba(201,168,76,.12);
   
   /* DARK MODE (default) — luxury black gold */
-  --dark:#040404;--dark2:#0A0A0A;--dark3:#0F0F0F;--dark4:#161616;
-  --white:#F8F6F0;--gray:#7A7A72;--gray2:#4A4A44;
+  --dark:#070B14;--dark2:#0B1522;--dark3:#101C2C;--dark4:#16263A;
+  --white:#F5F7FA;--gray:#7A7A72;--gray2:#4A4A44;
   
   /* Semantic tokens — switch per theme */
-  --bg-primary:#040404;
-  --bg-secondary:#0A0A0A;
-  --bg-tertiary:#0F0F0F;
-  --bg-elevated:#161616;
-  --text-primary:#F8F6F0;
+  --bg-primary:#070B14;
+  --bg-secondary:#0B1522;
+  --bg-tertiary:#101C2C;
+  --bg-elevated:#16263A;
+  --text-primary:#F5F7FA;
   --text-secondary:#7A7A72;
   --text-muted:#4A4A44;
   --border-subtle:rgba(255,255,255,.05);
@@ -44,13 +44,13 @@
 
 /* LIGHT MODE — cream luxury */
 [data-theme="light"]{
-  --bg-primary:#FAF7EF;
-  --bg-secondary:#F4EFE4;
-  --bg-tertiary:#EDE6D5;
+  --bg-primary:#F7F8FA;
+  --bg-secondary:#EEF1F4;
+  --bg-tertiary:#E4E8ED;
   --bg-elevated:#FFFFFF;
-  --text-primary:#1A1410;
-  --text-secondary:#5A4F3F;
-  --text-muted:#8B7E68;
+  --text-primary:#16283F;
+  --text-secondary:#3C5068;
+  --text-muted:#64758A;
   --border-subtle:rgba(26,20,16,.08);
   --border-medium:rgba(26,20,16,.12);
   --border-gold:rgba(160,120,48,.35);
@@ -63,14 +63,14 @@
   --card-shadow:0 30px 80px -20px rgba(70,55,30,.15);
   --card-shadow-hover:0 30px 80px -20px rgba(160,120,48,.25);
   /* Slightly deeper gold in light mode for contrast */
-  --gold:#A07830;
-  --gold2:#C9A84C;
-  --gold3:#7A5E20;
+  --gold:#B85630;
+  --gold2:#D2704A;
+  --gold3:#8C4025;
 }
 
 /* ─── LIGHT MODE OVERRIDES — invert hardcoded values for legibility ─── */
 [data-theme="light"] body{
-  background:linear-gradient(180deg,#FAF7EF 0%,#F4EFE4 100%);
+  background:linear-gradient(180deg,#F7F8FA 0%,#EEF1F4 100%);
 }
 [data-theme="light"] .bg-grid{
   background-image:
@@ -140,7 +140,7 @@
 [data-theme="light"] .ptab.active{color:var(--dark);background:var(--gold) !important;}
 /* Buttons */
 [data-theme="light"] .btn-primary{
-  background:var(--gold);color:#FAF7EF;
+  background:var(--gold);color:#F7F8FA;
   box-shadow:0 8px 20px -6px rgba(160,120,48,.4);
 }
 [data-theme="light"] .btn-primary:hover{
@@ -151,7 +151,7 @@
   border-color:var(--gold);color:var(--gold);
 }
 [data-theme="light"] .btn-ghost:hover{
-  background:var(--gold);color:#FAF7EF;
+  background:var(--gold);color:#F7F8FA;
 }
 /* Hero title contrast */
 [data-theme="light"] .hero-title{
@@ -212,8 +212,8 @@
 [data-theme="light"] #testi-pop .testi-name{color:var(--text-primary) !important;}
 [data-theme="light"] #testi-pop .testi-msg{color:var(--text-secondary) !important;}
 [data-theme="light"] #testi-pop .testi-time{color:var(--text-muted) !important;}
-[data-theme="light"] #testi-pop .testi-avatar{color:#FAF7EF !important;}
-[data-theme="light"] #testi-pop .testi-avatar::after{border-color:#FFFDF7 !important;}
+[data-theme="light"] #testi-pop .testi-avatar{color:#F7F8FA !important;}
+[data-theme="light"] #testi-pop .testi-avatar::after{border-color:#FAFBFD !important;}
 [data-theme="light"] #testi-pop .testi-close{
   background:rgba(160,120,48,.12) !important;
   color:var(--gold) !important;
@@ -233,7 +233,7 @@
   background:linear-gradient(to bottom,var(--gold),var(--gold3)) !important;
 }
 /* Curtain (loading) */
-[data-theme="light"] #curtain .panel{background:#FAF7EF !important;}
+[data-theme="light"] #curtain .panel{background:#F7F8FA !important;}
 [data-theme="light"] #curtain .brand{color:var(--text-primary) !important;}
 /* Hero lines */
 [data-theme="light"] .hero-lines span{
@@ -260,8 +260,8 @@
   border-bottom-color:var(--border-subtle) !important;
 }
 [data-theme="light"] .stat{border-color:var(--border-subtle) !important;}
-[data-theme="light"] .stat-num{color:#7A5E20 !important;}
-[data-theme="light"] .stat-label{color:#5A4F3F !important;}
+[data-theme="light"] .stat-num{color:#8C4025 !important;}
+[data-theme="light"] .stat-label{color:#3C5068 !important;}
 
 /* ════════════════════════════════════════════════════
    CRITICAL FIX: Section title em — pakai SOLID color
@@ -274,23 +274,23 @@
   -webkit-background-clip:initial !important;
   background-clip:initial !important;
   -webkit-text-fill-color:initial !important;
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
   filter:drop-shadow(0 1px 2px rgba(122,94,32,.15)) !important;
   animation:none !important;
 }
 [data-theme="light"] .hero-title strong{
-  color:#1A1410 !important;
+  color:#16283F !important;
   text-shadow:0 2px 8px rgba(160,120,48,.2) !important;
   animation:none !important;
 }
 /* Section tag - lebih solid */
 [data-theme="light"] .section-tag{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
 }
 /* Section header subtitle text */
 [data-theme="light"] .section-header p,
 [data-theme="light"] .section-sub{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 
 /* ════════════════════════════════════════════════════
@@ -303,37 +303,37 @@
   color:rgba(122,94,32,.4) !important;
 }
 [data-theme="light"] .service-name{
-  color:#1A1410 !important;
+  color:#16283F !important;
 }
 [data-theme="light"] .service-desc{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 [data-theme="light"] .service-card:hover{
-  background:#FFFCF4 !important;
+  background:#FAFBFC !important;
   box-shadow:0 30px 80px -20px rgba(160,120,48,.2),0 0 0 1px rgba(160,120,48,.15) !important;
 }
 /* Special service card (Custom Project) - DARKER bg + visible text */
 [data-theme="light"] .service-card.special{
   background:linear-gradient(135deg,rgba(201,168,76,.25),rgba(255,253,247,.95)) !important;
-  border:2px solid #A07830 !important;
+  border:2px solid #B85630 !important;
 }
 [data-theme="light"] .service-card.special .service-name{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .service-card.special .service-desc{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 
 /* Tags - more visible */
 [data-theme="light"] .service-tag,
 [data-theme="light"] .bundle-tag{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
   border-color:rgba(160,120,48,.4) !important;
   background:rgba(201,168,76,.08) !important;
 }
 [data-theme="light"] .price-tag{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
   background:rgba(201,168,76,.12) !important;
 }
 
@@ -341,72 +341,72 @@
    PRICING CARDS — readable text & visible buttons
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .price-name{
-  color:#1A1410 !important;
+  color:#16283F !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .price-desc,
 [data-theme="light"] .price-period,
 [data-theme="light"] .price-note{
-  color:#5A4F3F !important;
+  color:#3C5068 !important;
 }
 [data-theme="light"] .price-main,
 [data-theme="light"] .bundle-price-main{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
   font-weight:700 !important;
 }
 [data-theme="light"] .price-old,
 [data-theme="light"] .bundle-price-old{
-  color:#8B7E68 !important;
+  color:#64758A !important;
 }
 [data-theme="light"] .price-features li,
 [data-theme="light"] .features li{
-  color:#2D2620 !important;
+  color:#1E3044 !important;
 }
 [data-theme="light"] .price-features li::before,
 [data-theme="light"] .features li::before{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
 }
 
 /* Buttons inside cards - SOLID DARK GOLD with WHITE text */
 [data-theme="light"] .btn-price,
 [data-theme="light"] .bundle-btn{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
-  border:1px solid #7A5E20 !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
+  border:1px solid #8C4025 !important;
   font-weight:500 !important;
 }
 [data-theme="light"] .btn-price:hover,
 [data-theme="light"] .bundle-btn:hover{
-  background:#A07830 !important;
-  border-color:#A07830 !important;
+  background:#B85630 !important;
+  border-color:#B85630 !important;
   color:#FFFFFF !important;
   box-shadow:0 8px 20px -4px rgba(122,94,32,.4) !important;
 }
 /* Featured card button extra emphasis */
 [data-theme="light"] .price-card.featured .btn-price{
-  background:linear-gradient(135deg,#7A5E20,#A07830) !important;
+  background:linear-gradient(135deg,#8C4025,#B85630) !important;
 }
 
 /* ════════════════════════════════════════════════════
    BUNDLE CARDS
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .bundle-name{
-  color:#1A1410 !important;
+  color:#16283F !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .bundle-tagline{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 [data-theme="light"] .bundle-price-note{
-  color:#5A4F3F !important;
+  color:#3C5068 !important;
 }
 [data-theme="light"] .bundle-save{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .bundle-save.best{
-  background:linear-gradient(135deg,#7A5E20,#A07830) !important;
+  background:linear-gradient(135deg,#8C4025,#B85630) !important;
 }
 
 /* ════════════════════════════════════════════════════
@@ -415,64 +415,64 @@
 [data-theme="light"] .whyus-text,
 [data-theme="light"] .why-content p,
 [data-theme="light"] .why-box-text{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 [data-theme="light"] .why-content h4,
 [data-theme="light"] .why-box-title{
-  color:#1A1410 !important;
+  color:#16283F !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .why-num{
   color:rgba(122,94,32,.35) !important;
 }
 [data-theme="light"] .step-num{
-  background:#FFFCF4 !important;
-  color:#7A5E20 !important;
-  border:1.5px solid #A07830 !important;
+  background:#FAFBFC !important;
+  color:#8C4025 !important;
+  border:1.5px solid #B85630 !important;
 }
 [data-theme="light"] .step-title{
-  color:#1A1410 !important;
+  color:#16283F !important;
   font-weight:600 !important;
 }
 [data-theme="light"] .step-desc{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
 
 /* ════════════════════════════════════════════════════
    STATIC TESTIMONIAL CARDS in section (.testi)
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .testi-card{
-  background:#FFFCF4 !important;
+  background:#FAFBFC !important;
   border-color:rgba(160,120,48,.15) !important;
 }
 [data-theme="light"] .testi-text{
-  color:#2D2620 !important;
+  color:#1E3044 !important;
 }
 [data-theme="light"] .testi-quote{
   color:rgba(122,94,32,.15) !important;
 }
 [data-theme="light"] .testi-name{
-  color:#1A1410 !important;
+  color:#16283F !important;
 }
 [data-theme="light"] .testi-role{
-  color:#7A5E20 !important;
+  color:#8C4025 !important;
 }
 
 /* ════════════════════════════════════════════════════
    HERO — make sure background isn't pure white
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .hero{
-  background:linear-gradient(180deg,#FAF7EF 0%,#F4EFE4 100%) !important;
+  background:linear-gradient(180deg,#F7F8FA 0%,#EEF1F4 100%) !important;
 }
 [data-theme="light"] .hero-sub{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
-[data-theme="light"] .scroll-cue{color:#5A4F3F !important;}
+[data-theme="light"] .scroll-cue{color:#3C5068 !important;}
 
 /* Gold marquee text */
 [data-theme="light"] .marquee-text{
-  -webkit-text-fill-color:#7A5E20 !important;
-  color:#7A5E20 !important;
+  -webkit-text-fill-color:#8C4025 !important;
+  color:#8C4025 !important;
   -webkit-text-stroke:0 !important;
   opacity:.12 !important;
 }
@@ -480,37 +480,37 @@
 /* ════════════════════════════════════════════════════
    FAQ
    ════════════════════════════════════════════════════ */
-[data-theme="light"] details{border-color:rgba(160,120,48,.18) !important;background:#FFFCF4 !important;}
-[data-theme="light"] details summary{color:#1A1410 !important;font-weight:600 !important;}
-[data-theme="light"] details p{color:#3D3528 !important;}
-[data-theme="light"] details[open]{background:#FFFFFF !important;border-color:#A07830 !important;}
+[data-theme="light"] details{border-color:rgba(160,120,48,.18) !important;background:#FAFBFC !important;}
+[data-theme="light"] details summary{color:#16283F !important;font-weight:600 !important;}
+[data-theme="light"] details p{color:#24374D !important;}
+[data-theme="light"] details[open]{background:#FFFFFF !important;border-color:#B85630 !important;}
 
 /* ════════════════════════════════════════════════════
    CTA SECTION CARDS
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .cta-card{
-  background:#FFFCF4 !important;
+  background:#FAFBFC !important;
   border:1.5px solid rgba(160,120,48,.25) !important;
 }
-[data-theme="light"] .cta-card h3{color:#1A1410 !important;font-weight:600 !important;}
-[data-theme="light"] .cta-card p{color:#3D3528 !important;}
+[data-theme="light"] .cta-card h3{color:#16283F !important;font-weight:600 !important;}
+[data-theme="light"] .cta-card p{color:#24374D !important;}
 
 /* ════════════════════════════════════════════════════
    FOOTER
    ════════════════════════════════════════════════════ */
 [data-theme="light"] footer{
-  background:#EDE6D5 !important;
+  background:#E4E8ED !important;
   border-top-color:rgba(160,120,48,.2) !important;
 }
 [data-theme="light"] .footer-desc,
 [data-theme="light"] .footer-col a,
 [data-theme="light"] .footer-col p{
-  color:#3D3528 !important;
+  color:#24374D !important;
 }
-[data-theme="light"] .footer-col h4{color:#1A1410 !important;font-weight:600 !important;}
-[data-theme="light"] .footer-col a:hover{color:#7A5E20 !important;}
+[data-theme="light"] .footer-col h4{color:#16283F !important;font-weight:600 !important;}
+[data-theme="light"] .footer-col a:hover{color:#8C4025 !important;}
 [data-theme="light"] .footer-bottom{
-  color:#5A4F3F !important;
+  color:#3C5068 !important;
   border-top-color:rgba(160,120,48,.2) !important;
 }
 
@@ -518,41 +518,41 @@
    POPUP TOGGLE & NAV CTA
    ════════════════════════════════════════════════════ */
 [data-theme="light"] .nav-cta{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
-  border-color:#7A5E20 !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
+  border-color:#8C4025 !important;
 }
 [data-theme="light"] .nav-cta:hover{
-  background:#A07830 !important;
-  border-color:#A07830 !important;
+  background:#B85630 !important;
+  border-color:#B85630 !important;
   color:#FFFFFF !important;
 }
 [data-theme="light"] .m-cta{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
 }
 
 /* Hero buttons - more visible */
 [data-theme="light"] .btn-primary{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
-  border-color:#7A5E20 !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
+  border-color:#8C4025 !important;
   box-shadow:0 8px 24px -6px rgba(122,94,32,.45) !important;
   font-weight:500 !important;
 }
 [data-theme="light"] .btn-primary:hover{
-  background:#A07830 !important;
-  border-color:#A07830 !important;
+  background:#B85630 !important;
+  border-color:#B85630 !important;
   box-shadow:0 12px 32px -6px rgba(122,94,32,.6) !important;
 }
 [data-theme="light"] .btn-ghost{
-  border-color:#7A5E20 !important;
-  color:#7A5E20 !important;
+  border-color:#8C4025 !important;
+  color:#8C4025 !important;
   font-weight:500 !important;
 }
 [data-theme="light"] .btn-ghost:hover{
-  background:#7A5E20 !important;
-  color:#FAF7EF !important;
+  background:#8C4025 !important;
+  color:#F7F8FA !important;
 }
 
 /* Pricing tabs */
@@ -560,23 +560,23 @@
   background:rgba(201,168,76,.08) !important;
   border-color:rgba(160,120,48,.2) !important;
 }
-[data-theme="light"] .ptab{color:#5A4F3F !important;}
+[data-theme="light"] .ptab{color:#3C5068 !important;}
 [data-theme="light"] .ptab.active{
-  color:#FAF7EF !important;
-  background:#7A5E20 !important;
+  color:#F7F8FA !important;
+  background:#8C4025 !important;
 }
 
 /* Hero badge */
 [data-theme="light"] .hero-badge{
   background:rgba(255,255,255,.85) !important;
-  border-color:#A07830 !important;
-  color:#7A5E20 !important;
+  border-color:#B85630 !important;
+  color:#8C4025 !important;
   font-weight:500 !important;
 }
 
 /* Section line */
 [data-theme="light"] .section-line{
-  background:linear-gradient(to right,transparent,#7A5E20,transparent) !important;
+  background:linear-gradient(to right,transparent,#8C4025,transparent) !important;
   height:1px !important;
 }
 
@@ -666,7 +666,7 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
   radial-gradient(ellipse 100% 70% at 50% 0%,rgba(201,168,76,.08),transparent 60%),
   radial-gradient(ellipse 80% 60% at 20% 100%,rgba(160,120,48,.06),transparent 60%),
   radial-gradient(ellipse 70% 50% at 100% 50%,rgba(232,201,122,.04),transparent 70%),
-  linear-gradient(180deg,#050505 0%,#0A0807 50%,#050505 100%);
+  linear-gradient(180deg,#081019 0%,#0B1420 50%,#081019 100%);
 }
 .velvet::before{
   content:'';position:absolute;inset:0;
@@ -680,6 +680,48 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
 
 /* ─── FILM GRAIN ─── */
 .film-grain{position:fixed;inset:-50%;z-index:2;pointer-events:none;width:200%;height:200%;opacity:.04;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grainShift .5s steps(8) infinite;}
+
+/* ─── INTERACTIVE CURSOR (spotlight yang mengikuti mouse) ─── */
+.cursor-glow{
+  position:fixed;top:0;left:0;width:420px;height:420px;
+  border-radius:50%;pointer-events:none;z-index:3;
+  background:radial-gradient(circle,rgba(210,112,74,.10) 0%,rgba(210,112,74,.04) 40%,transparent 70%);
+  transform:translate(-50%,-50%);
+  opacity:0;transition:opacity .5s ease;
+  will-change:transform;
+}
+.cursor-glow.active{opacity:1;}
+.cursor-dot{
+  position:fixed;top:0;left:0;width:8px;height:8px;border-radius:50%;
+  background:var(--gold);pointer-events:none;z-index:9999;
+  transform:translate(-50%,-50%);opacity:0;
+  transition:opacity .3s ease,width .3s cubic-bezier(.2,.8,.2,1),height .3s cubic-bezier(.2,.8,.2,1),background .3s;
+  mix-blend-mode:difference;
+}
+.cursor-dot.active{opacity:.85;}
+.cursor-dot.hovering{width:44px;height:44px;background:rgba(210,112,74,.25);mix-blend-mode:normal;border:1px solid var(--gold);}
+@media (hover:none),(pointer:coarse){.cursor-glow,.cursor-dot{display:none;}}
+
+/* ─── MAGNETIC BUTTONS (menarik halus ke arah kursor) ─── */
+.btn-primary,.btn-ghost,.btn-price,.bundle-btn,.nav-cta{
+  will-change:transform;
+}
+.magnet-active{transition:transform .25s cubic-bezier(.2,.8,.2,1) !important;}
+
+/* ─── 3D TILT CARDS + GLOSS SPOTLIGHT MENGIKUTI CURSOR ─── */
+.service-card,.price-card,.bundle-card,.why-box{
+  --mx:50%;--my:50%;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .4s,background .4s,border-color .4s;
+}
+.service-card::before,.price-card::before,.bundle-card::before,.why-box::before{
+  --tilt-glow:1;
+}
+.tilt-spot{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:2;opacity:0;
+  background:radial-gradient(320px circle at var(--mx) var(--my),rgba(210,112,74,.14),transparent 65%);
+  transition:opacity .4s ease;
+}
+.service-card:hover .tilt-spot,.price-card:hover .tilt-spot,.bundle-card:hover .tilt-spot,.why-box:hover .tilt-spot{opacity:1;}
 @keyframes grainShift{
   0%,100%{transform:translate(0,0);}
   10%{transform:translate(-5%,-10%);}
@@ -712,7 +754,7 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
 /* ─── CINEMATIC CURTAIN OPENING ─── */
 #curtain{position:fixed;inset:0;z-index:9999;display:flex;pointer-events:none;}
 #curtain.gone{display:none;}
-#curtain .panel{flex:1;background:linear-gradient(180deg,#000,#050505 50%,#000);position:relative;overflow:hidden;transition:transform 1.4s cubic-bezier(.76,0,.24,1);}
+#curtain .panel{flex:1;background:linear-gradient(180deg,#000,#081019 50%,#000);position:relative;overflow:hidden;transition:transform 1.4s cubic-bezier(.76,0,.24,1);}
 #curtain .panel-l{transform-origin:left;}
 #curtain .panel-r{transform-origin:right;}
 #curtain.opening .panel-l{transform:translateX(-100%);}
@@ -1058,7 +1100,7 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
   content:'';position:absolute;bottom:-1px;right:-1px;
   width:12px;height:12px;border-radius:50%;
   background:radial-gradient(circle at 30% 30%,#4ADE80,#16A34A);
-  border:2px solid #0A0A0A;
+  border:2px solid #0B1522;
   box-shadow:0 0 10px rgba(34,197,94,.7);
   animation:onlinePulse 2s ease-in-out infinite;
 }
@@ -1082,7 +1124,7 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
 }
 #testi-pop .testi-time{font-size:9.5px;color:var(--gray);letter-spacing:.3px;font-variant-numeric:tabular-nums;}
 #testi-pop .testi-msg{
-  font-size:12px;line-height:1.55;color:#DBD7CB;font-family:var(--font-body);word-wrap:break-word;
+  font-size:12px;line-height:1.55;color:#C7CDD6;font-family:var(--font-body);word-wrap:break-word;
   margin-top:1px;
 }
 #testi-pop .testi-action{
@@ -1096,12 +1138,12 @@ p,h1,h2,h3,h4,h5,h6,span,a,li,label{
 }
 
 /* Avatar color variants */
-.av-1{background:linear-gradient(135deg,#E8C97A,#A07830);}
-.av-2{background:linear-gradient(135deg,#C9A84C,#E8C97A);}
-.av-3{background:linear-gradient(135deg,#FFD89B,#C9A84C);}
-.av-4{background:linear-gradient(135deg,#B89042,#FFEEB7);}
-.av-5{background:linear-gradient(135deg,#D4AF37,#956E1F);}
-.av-6{background:linear-gradient(135deg,#F5D78E,#8B6914);}
+.av-1{background:linear-gradient(135deg,#E8946F,#B85630);}
+.av-2{background:linear-gradient(135deg,#D2704A,#E8946F);}
+.av-3{background:linear-gradient(135deg,#F5C4A0,#D2704A);}
+.av-4{background:linear-gradient(135deg,#B85F3A,#F2C4A8);}
+.av-5{background:linear-gradient(135deg,#C86A3E,#8C4025);}
+.av-6{background:linear-gradient(135deg,#EFB08C,#7A3820);}
 
 /* Hero 3D floating crystals */
 .hero-3d{position:absolute;inset:0;pointer-events:none;perspective:1200px;z-index:1;}
@@ -1186,7 +1228,7 @@ nav.scrolled{background:rgba(4,4,4,.94);border-color:rgba(201,168,76,.08);backdr
 @keyframes badgeSweep{0%,100%{left:-100%;}50%{left:150%;}}
 
 .hero-title{font-family:var(--font-display);font-size:clamp(48px,9vw,112px);font-weight:300;line-height:1;letter-spacing:-2px;margin-bottom:clamp(20px,3vw,30px);animation:fadeUp .9s .3s both;text-shadow:0 0 40px rgba(201,168,76,.15);position:relative;}
-.hero-title em{font-style:italic;background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 40%,#FFEEB7 50%,var(--gold2) 60%,var(--gold) 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldShine 4s linear infinite;filter:drop-shadow(0 0 25px rgba(201,168,76,.35));}
+.hero-title em{font-style:italic;background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 40%,#F2C4A8 50%,var(--gold2) 60%,var(--gold) 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldShine 4s linear infinite;filter:drop-shadow(0 0 25px rgba(201,168,76,.35));}
 .hero-title strong{font-weight:700;display:block;position:relative;animation:neonPulse 3s ease-in-out infinite;}
 
 @keyframes neonPulse{
@@ -1309,7 +1351,7 @@ nav.scrolled{background:rgba(4,4,4,.94);border-color:rgba(201,168,76,.08);backdr
 .why-content h4{font-size:13px;font-weight:500;letter-spacing:.8px;margin-bottom:6px;}
 .why-content p{font-size:12px;color:var(--gray);line-height:1.9;}
 .why-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.why-box{border:1px solid rgba(255,255,255,.05);padding:clamp(22px,2.5vw,36px) clamp(16px,2vw,28px);text-align:center;background:var(--dark);}
+.why-box{border:1px solid rgba(255,255,255,.05);padding:clamp(22px,2.5vw,36px) clamp(16px,2vw,28px);text-align:center;background:var(--dark);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .4s;will-change:transform;}
 .why-box-title{font-size:12px;font-weight:500;margin-bottom:7px;letter-spacing:.5px;}
 .why-box-text{font-size:11px;color:var(--gray);line-height:1.7;}
 
@@ -1492,7 +1534,7 @@ footer{padding:clamp(48px,6vw,72px) 0;border-top:1px solid rgba(255,255,255,.04)
 /* Section title em — gold word gets extra dramatic entrance */
 .section-title em{
   display:inline-block;
-  background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 30%,#FFEEB7 50%,var(--gold2) 70%,var(--gold) 100%);
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 30%,#F2C4A8 50%,var(--gold2) 70%,var(--gold) 100%);
   background-size:300% auto;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -1826,6 +1868,10 @@ section.beam-active::after{left:140%;}
 <div id="three-scene" aria-hidden="true"></div>
 
 <div class="film-grain" aria-hidden="true"></div>
+
+<!-- ─── CURSOR SPOTLIGHT (interactive, follows mouse) ─── -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
 <!-- ─── LIVE TESTIMONI POPUP + TOGGLE ─── -->
 <button id="testi-toggle" aria-label="Toggle notifications" type="button">
@@ -2978,7 +3024,7 @@ window.themeManager = (function initTheme(){
   
   // Scene setup
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x040404, 15, 45);
+  scene.fog = new THREE.Fog(0x070B14, 15, 45);
   
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100);
   camera.position.set(0, 0, 18);
@@ -2994,27 +3040,27 @@ window.themeManager = (function initTheme(){
   container.appendChild(renderer.domElement);
   
   // ─── LUXURY LIGHTING ───
-  const ambient = new THREE.AmbientLight(0xC9A84C, 0.25);
+  const ambient = new THREE.AmbientLight(0xD2704A, 0.25);
   scene.add(ambient);
   
   // Main golden key light
-  const keyLight = new THREE.DirectionalLight(0xFFEEB7, 1.5);
+  const keyLight = new THREE.DirectionalLight(0xF2C4A8, 1.5);
   keyLight.position.set(8, 10, 10);
   scene.add(keyLight);
   
   // Rim light (back gold glow)
-  const rimLight = new THREE.PointLight(0xC9A84C, 2.0, 30);
+  const rimLight = new THREE.PointLight(0xD2704A, 2.0, 30);
   rimLight.position.set(-10, -5, -10);
   scene.add(rimLight);
   
   // Fill warm
-  const fillLight = new THREE.PointLight(0xE8C97A, 1.0, 25);
+  const fillLight = new THREE.PointLight(0xE8946F, 1.0, 25);
   fillLight.position.set(6, -4, 8);
   scene.add(fillLight);
   
   // ─── PREMIUM MATERIALS ───
   const goldMetal = new THREE.MeshStandardMaterial({
-    color: 0xC9A84C,
+    color: 0xD2704A,
     metalness: 0.95,
     roughness: 0.15,
     transparent: true,
@@ -3022,17 +3068,17 @@ window.themeManager = (function initTheme(){
   });
   
   const goldBright = new THREE.MeshStandardMaterial({
-    color: 0xE8C97A,
+    color: 0xE8946F,
     metalness: 0.9,
     roughness: 0.1,
-    emissive: 0xC9A84C,
+    emissive: 0xD2704A,
     emissiveIntensity: 0.15,
     transparent: true,
     opacity: 0.88
   });
   
   const wireGold = new THREE.MeshBasicMaterial({
-    color: 0xE8C97A,
+    color: 0xE8946F,
     wireframe: true,
     transparent: true,
     opacity: 0.4
@@ -3049,7 +3095,7 @@ window.themeManager = (function initTheme(){
   // Wireframe overlay for diamond (extra premium feel)
   const diamondWire = new THREE.Mesh(
     new THREE.OctahedronGeometry(2.3, 0),
-    new THREE.MeshBasicMaterial({ color: 0xFFEEB7, wireframe: true, transparent: true, opacity: 0.25 })
+    new THREE.MeshBasicMaterial({ color: 0xF2C4A8, wireframe: true, transparent: true, opacity: 0.25 })
   );
   diamond.add(diamondWire);
   
@@ -3060,7 +3106,7 @@ window.themeManager = (function initTheme(){
     const ring = new THREE.Mesh(
       new THREE.TorusGeometry(ringSizes[i], 0.04, 16, 100),
       new THREE.MeshStandardMaterial({
-        color: 0xC9A84C,
+        color: 0xD2704A,
         metalness: 0.9,
         roughness: 0.2,
         transparent: true,
@@ -3089,7 +3135,7 @@ window.themeManager = (function initTheme(){
     () => new THREE.TorusGeometry(0.4, 0.15, 8, 32)
   ];
   
-  const crystalCount = isLowEnd ? 6 : 14;
+  const crystalCount = isLowEnd ? 4 : 8;
   for(let i = 0; i < crystalCount; i++){
     const geo = geoTypes[i % geoTypes.length]();
     const useWire = Math.random() > 0.6;
@@ -3117,7 +3163,7 @@ window.themeManager = (function initTheme(){
   }
   
   // ─── GOLDEN PARTICLE FIELD ───
-  const particleCount = isLowEnd ? 300 : 900;
+  const particleCount = isLowEnd ? 150 : 400;
   const pGeo = new THREE.BufferGeometry();
   const pPos = new Float32Array(particleCount * 3);
   const pSizes = new Float32Array(particleCount);
@@ -3130,10 +3176,10 @@ window.themeManager = (function initTheme(){
   pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
   
   const pMat = new THREE.PointsMaterial({
-    color: 0xE8C97A,
-    size: 0.06,
+    color: 0xE8946F,
+    size: 0.045,
     transparent: true,
-    opacity: 0.75,
+    opacity: 0.4,
     blending: THREE.AdditiveBlending,
     depthWrite: false,
     sizeAttenuation: true
@@ -3185,21 +3231,21 @@ window.themeManager = (function initTheme(){
     targetMY += (mouseY - targetMY) * 0.04;
     
     // ─── DIAMOND: scroll-reactive rotation + position ───
-    const scrollSpin = scrollProgress * Math.PI * 4;
-    diamond.rotation.y = t * 0.15 + scrollSpin;
-    diamond.rotation.x = Math.sin(t * 0.2) * 0.2 + scrollProgress * Math.PI * 0.5;
-    diamond.rotation.z = scrollProgress * Math.PI * 2;
-    // Diamond mengikuti scroll: turun + zoom out
-    diamond.position.y = -scrollProgress * 4;
-    diamond.position.z = -2 - scrollProgress * 6;
-    diamond.scale.setScalar(1 + Math.abs(scrollVelocity) * 0.005);
+    const scrollSpin = scrollProgress * Math.PI * 1.5;
+    diamond.rotation.y = t * 0.08 + scrollSpin;
+    diamond.rotation.x = Math.sin(t * 0.12) * 0.12 + scrollProgress * Math.PI * 0.25;
+    diamond.rotation.z = scrollProgress * Math.PI * 0.8;
+    // Diamond mengikuti scroll: turun + zoom out (lebih halus)
+    diamond.position.y = -scrollProgress * 2.5;
+    diamond.position.z = -2 - scrollProgress * 4;
+    diamond.scale.setScalar(1 + Math.abs(scrollVelocity) * 0.002);
     
     // ─── RINGS: scroll-reactive ekspansi + rotasi ───
     rings.forEach((ring, i) => {
       ring.rotation.x = ring.userData.baseRotX + t * ring.userData.rotSpeedX * 30 + scrollProgress * Math.PI * 2;
       ring.rotation.y = ring.userData.baseRotY + t * ring.userData.rotSpeedY * 30 + scrollProgress * Math.PI;
       // Saat scroll, ring expand & contract dengan velocity
-      const expand = 1 + scrollProgress * 0.3 + Math.abs(scrollVelocity) * 0.01;
+      const expand = 1 + scrollProgress * 0.15 + Math.abs(scrollVelocity) * 0.004;
       ring.scale.setScalar(expand);
       // Position follow diamond
       ring.position.y = diamond.position.y;
@@ -3215,30 +3261,30 @@ window.themeManager = (function initTheme(){
       c.rotation.z += ud.rotSpeed.z;
       
       // Orbital motion — angle bertambah seiring waktu + scroll
-      const angle = ud.baseAngle + t * 0.1 + scrollProgress * Math.PI * 2;
-      const radius = ud.baseRadius + Math.sin(t * 0.3 + ud.phase) * 0.5;
+      const angle = ud.baseAngle + t * 0.05 + scrollProgress * Math.PI * 0.8;
+      const radius = ud.baseRadius + Math.sin(t * 0.2 + ud.phase) * 0.4;
       c.position.x = Math.cos(angle) * radius;
       c.position.z = Math.sin(angle) * radius - 2;
-      c.position.y = ud.baseY + Math.sin(t * ud.floatSpeed * 100 + ud.phase) * ud.floatAmp - scrollProgress * 2;
+      c.position.y = ud.baseY + Math.sin(t * ud.floatSpeed * 100 + ud.phase) * ud.floatAmp - scrollProgress * 1.2;
     });
     
     // ─── PARTICLES: subtle rotation + scroll drift ───
-    particles.rotation.y = t * 0.04 + scrollProgress * 0.5;
-    particles.rotation.x = t * 0.02;
-    particles.position.y = -scrollProgress * 3;
+    particles.rotation.y = t * 0.02 + scrollProgress * 0.25;
+    particles.rotation.x = t * 0.01;
+    particles.position.y = -scrollProgress * 1.8;
     
-    // ─── CAMERA: dolly + mouse parallax + scroll ───
+    // ─── CAMERA: dolly + mouse parallax + scroll (halus, minimal) ───
     // Camera bergerak melingkari diamond seiring scroll
-    const camAngle = scrollProgress * Math.PI * 0.6;
-    camera.position.x = Math.sin(camAngle) * 4 + targetMX * 2;
-    camera.position.y = targetMY * -1.5 - scrollProgress * 2;
-    camera.position.z = 18 - scrollProgress * 4 + Math.cos(camAngle) * 2;
+    const camAngle = scrollProgress * Math.PI * 0.3;
+    camera.position.x = Math.sin(camAngle) * 2.5 + targetMX * 1.2;
+    camera.position.y = targetMY * -1 - scrollProgress * 1.2;
+    camera.position.z = 18 - scrollProgress * 3 + Math.cos(camAngle) * 1.2;
     camera.lookAt(0, diamond.position.y, diamond.position.z);
     
     // ─── DYNAMIC LIGHTING ───
-    rimLight.position.x = Math.sin(t * 0.4) * 10;
-    rimLight.position.z = Math.cos(t * 0.4) * 10;
-    rimLight.intensity = 2 + Math.abs(scrollVelocity) * 0.05; // brighter saat scroll
+    rimLight.position.x = Math.sin(t * 0.25) * 10;
+    rimLight.position.z = Math.cos(t * 0.25) * 10;
+    rimLight.intensity = 2 + Math.abs(scrollVelocity) * 0.02; // sedikit lebih terang saat scroll
     
     renderer.render(scene, camera);
   }
@@ -3248,68 +3294,68 @@ window.themeManager = (function initTheme(){
   function applyThemeToScene(theme){
     if(theme === 'light'){
       // Light mode: deeper darker gold for contrast on cream
-      scene.fog = new THREE.Fog(0xFAF7EF, 18, 50);
-      ambient.color.set(0xA07830);
+      scene.fog = new THREE.Fog(0xF7F8FA, 18, 50);
+      ambient.color.set(0xB85630);
       ambient.intensity = 0.4;
-      keyLight.color.set(0xC9A84C);
+      keyLight.color.set(0xD2704A);
       keyLight.intensity = 1.2;
-      rimLight.color.set(0xA07830);
-      fillLight.color.set(0xC9A84C);
+      rimLight.color.set(0xB85630);
+      fillLight.color.set(0xD2704A);
       
       // Material colors — deeper gold
-      diamond.material.color.set(0xA07830);
-      diamond.material.emissive.set(0x7A5E20);
+      diamond.material.color.set(0xB85630);
+      diamond.material.emissive.set(0x8C4025);
       diamond.material.emissiveIntensity = 0.05;
-      diamondWire.material.color.set(0xC9A84C);
+      diamondWire.material.color.set(0xD2704A);
       diamondWire.material.opacity = 0.4;
       
       rings.forEach(r => {
-        r.material.color.set(0xA07830);
+        r.material.color.set(0xB85630);
       });
       
       crystals.forEach(c => {
         if(c.material.wireframe){
-          c.material.color.set(0xA07830);
+          c.material.color.set(0xB85630);
           c.material.opacity = 0.55;
         } else {
-          c.material.color.set(0xA07830);
+          c.material.color.set(0xB85630);
           c.material.opacity = 0.85;
         }
       });
       
-      pMat.color.set(0xA07830);
+      pMat.color.set(0xB85630);
       pMat.opacity = 0.5;
     } else {
       // Dark mode: original bright gold
-      scene.fog = new THREE.Fog(0x040404, 15, 45);
-      ambient.color.set(0xC9A84C);
+      scene.fog = new THREE.Fog(0x070B14, 15, 45);
+      ambient.color.set(0xD2704A);
       ambient.intensity = 0.25;
-      keyLight.color.set(0xFFEEB7);
+      keyLight.color.set(0xF2C4A8);
       keyLight.intensity = 1.5;
-      rimLight.color.set(0xC9A84C);
-      fillLight.color.set(0xE8C97A);
+      rimLight.color.set(0xD2704A);
+      fillLight.color.set(0xE8946F);
       
-      diamond.material.color.set(0xE8C97A);
-      diamond.material.emissive.set(0xC9A84C);
+      diamond.material.color.set(0xE8946F);
+      diamond.material.emissive.set(0xD2704A);
       diamond.material.emissiveIntensity = 0.15;
-      diamondWire.material.color.set(0xFFEEB7);
+      diamondWire.material.color.set(0xF2C4A8);
       diamondWire.material.opacity = 0.25;
       
       rings.forEach(r => {
-        r.material.color.set(0xC9A84C);
+        r.material.color.set(0xD2704A);
       });
       
       crystals.forEach(c => {
         if(c.material.wireframe){
-          c.material.color.set(0xE8C97A);
+          c.material.color.set(0xE8946F);
           c.material.opacity = 0.4;
         } else {
-          c.material.color.set(0xC9A84C);
+          c.material.color.set(0xD2704A);
           c.material.opacity = 0.92;
         }
       });
       
-      pMat.color.set(0xE8C97A);
+      pMat.color.set(0xE8946F);
       pMat.opacity = 0.75;
     }
   }
@@ -3319,6 +3365,105 @@ window.themeManager = (function initTheme(){
     applyThemeToScene(window.themeManager.getTheme());
     window.themeManager.onChange(applyThemeToScene);
   }
+})();
+</script>
+
+<!-- ─── INTERACTIVE MICRO-ANIMATIONS: cursor spotlight, magnetic button, 3D tilt card, parallax ─── -->
+<script>
+(function initInteractiveLayer(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  if(reduceMotion || isTouch) return;
+
+  // ── 1. CURSOR SPOTLIGHT + DOT (mengikuti mouse dengan smooth lerp) ──
+  const glow = document.getElementById('cursorGlow');
+  const dot = document.getElementById('cursorDot');
+  let gx = window.innerWidth/2, gy = window.innerHeight/2, gtx = gx, gty = gy;
+  let dxp = gx, dyp = gy;
+
+  window.addEventListener('mousemove', (e) => {
+    gtx = e.clientX; gty = e.clientY;
+    dxp = e.clientX; dyp = e.clientY;
+    if(glow) glow.classList.add('active');
+    if(dot) dot.classList.add('active');
+  }, { passive:true });
+
+  document.documentElement.addEventListener('mouseleave', () => {
+    if(glow) glow.classList.remove('active');
+    if(dot) dot.classList.remove('active');
+  });
+
+  function cursorTick(){
+    gx += (gtx - gx) * 0.12;
+    gy += (gty - gy) * 0.12;
+    if(glow) glow.style.transform = `translate(${gx}px, ${gy}px) translate(-50%,-50%)`;
+    if(dot) dot.style.transform = `translate(${dxp}px, ${dyp}px) translate(-50%,-50%)`;
+    requestAnimationFrame(cursorTick);
+  }
+  cursorTick();
+
+  // Dot membesar saat hover di elemen interaktif
+  const hoverables = document.querySelectorAll('a, button, .service-card, .price-card, .bundle-card, .why-box, input, select, textarea, .ptab');
+  hoverables.forEach(el => {
+    el.addEventListener('mouseenter', () => dot && dot.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => dot && dot.classList.remove('hovering'));
+  });
+
+  // ── 2. MAGNETIC BUTTONS (tertarik halus ke arah kursor) ──
+  const magnets = document.querySelectorAll('.btn-primary, .btn-ghost, .btn-price, .bundle-btn, .nav-cta');
+  magnets.forEach(btn => {
+    btn.classList.add('magnet-active');
+    btn.addEventListener('mousemove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const mx = e.clientX - r.left - r.width / 2;
+      const my = e.clientY - r.top - r.height / 2;
+      btn.style.transform = `translate(${mx * 0.18}px, ${my * 0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0,0)';
+    });
+  });
+
+  // ── 3. 3D TILT CARD + GLOSS SPOTLIGHT MENGIKUTI CURSOR DI DALAM CARD ──
+  const tiltCards = document.querySelectorAll('.service-card, .price-card, .bundle-card, .why-box');
+  tiltCards.forEach(card => {
+    const spot = document.createElement('div');
+    spot.className = 'tilt-spot';
+    card.appendChild(spot);
+
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width;
+      const py = (e.clientY - r.top) / r.height;
+      const rotY = (px - 0.5) * 8;
+      const rotX = (0.5 - py) * 6;
+      card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+      card.style.setProperty('--mx', `${px * 100}%`);
+      card.style.setProperty('--my', `${py * 100}%`);
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    });
+  });
+
+  // ── 4. PARALLAX HALUS PADA SECTION TAG SAAT SCROLL (hanya setelah elemen selesai reveal, biar tidak bentrok sama animasi masuknya) ──
+  const parallaxEls = document.querySelectorAll('.section-header .section-tag');
+  let pTicking = false;
+  window.addEventListener('scroll', () => {
+    if(pTicking) return;
+    pTicking = true;
+    requestAnimationFrame(() => {
+      const sy = window.scrollY;
+      parallaxEls.forEach((el, i) => {
+        const header = el.closest('.section-header');
+        if(!header || !header.classList.contains('visible')) return;
+        const speed = 0.025 + (i % 3) * 0.01;
+        const wave = ((sy % 800) * speed) - 6;
+        el.style.transform = `translateY(${Math.max(-10, Math.min(10, wave))}px)`;
+      });
+      pTicking = false;
+    });
+  }, { passive:true });
 })();
 </script>
 </body>
